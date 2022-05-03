@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <style>
+            body {
+                background-image: url('how-to-create-cool-website-backgrounds-the-ultimate-guide.png');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+            }
+        </style>
+        <title>NetTech</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">NetTech</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="/index.html">Create</a></li>
+                    </li>
+                    <li class="active"><a href="/search.html">Search</a></li>
+                    <li><a href="/update.html">Update</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            .navbar navbar-inverse {
+                background: transparent;
+            }
+
+            input[type=text], select, textarea {
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                margin-top: 6px;
+                margin-bottom: 16px;
+                resize: vertical;
+            }
+
+            .nav > li > a {
+                position: relative;
+                display: block;
+                padding: 15px 107px;
+                background-color: transparent;
+            }
+
+            input[type=submit] {
+                background-color: #c21ab9;
+                ;
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+                input[type=submit]:hover {
+                    background-color: #e00b8f;
+                }
+
+            .container {
+                border-radius: 5px;
+                background-color: #f0b7ed;
+                ;
+                padding: 20px;
+            }
+
+            .container-fluid {
+                padding-right: 159px;
+                padding-left: 226px;
+            }
+        </style>
+</head>
+<body>
+
+    <center>
+        <div class="container">
+            <div class="topnav">
+                <div class="search-container">
+                    <form action="/search/" method="post" enctype="applications/json" >
+                        <input type="text" placeholder="Search by ReqID.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+            <button onclick="myFunction()">Ascending</button>
+            <button onclick="myFunction1()">Descending</button>
+            <p id="myId"></p>
+
+            <script>
+                var a = [];
+                document.getElementById("myId").innerHTML = a;
+
+                function myFunction() {
+                    a.sort();
+                    document.getElementById("myId").innerHTML = a;
+                }
+            </script>
+            
+            <p id="myId"></p>
+
+            <script>
+                var a = [];
+                document.getElementById("myId").innerHTML = a;
+
+                function myFunction1() {
+                    a.sort();  //* Sort an array *//
+                    a.reverse(); //* Revsre the sorted array *//
+                    document.getElementById("myId").innerHTML = a;
+                }
+            </script>
+        </div>
+    </center>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #e9e9e9;
+        }
+
+            .topnav a {
+                float: left;
+                display: block;
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+
+                .topnav a:hover {
+                    background-color: #ddd;
+                    color: black;
+                }
+
+                .topnav a.active {
+                    background-color: #2196F3;
+                    color: white;
+                }
+
+            .topnav .search-container {
+                float: right;
+            }
+
+            .topnav input[type=text] {
+                padding: 6px;
+                margin-top: 49px;
+                font-size: 82px;
+                border: none;
+            }
+
+            .topnav .search-container button {
+                float: right;
+                padding: 6px 10px;
+                margin-top: 8px;
+                margin-right: 16px;
+                background: #ddd;
+                font-size: 17px;
+                border: none;
+                cursor: pointer;
+            }
+
+                .topnav .search-container button:hover {
+                    background: #ccc;
+                }
+
+        @media screen and (max-width: 600px) {
+            .topnav .search-container {
+                float: none;
+            }
+
+                .topnav a, .topnav input[type=text], .topnav .search-container button {
+                    float: none;
+                    display: block;
+                    text-align: left;
+                    width: 100%;
+                    margin: 0;
+                    padding: 14px;
+                }
+
+            .topnav input[type=text] {
+                border: 1px solid #ccc;
+            }
+        }
+    </style>
+</head>

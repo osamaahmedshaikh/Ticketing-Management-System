@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <style>
+        body {
+          background-image: url('how-to-create-cool-website-backgrounds-the-ultimate-guide.png');
+          background-repeat: no-repeat;
+          background-attachment: fixed;  
+          background-size: cover;
+        }
+        </style>
+    <title>NetTech</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+  
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">NetTech</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/index.html">Create</a></li>
+        </li>
+        <li><a href="/search.html">Search</a></li>
+        <li><a href="/update.html">Update</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+.navbar navbar-inverse {
+    background:transparent;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 15px 107px;
+    background-color: transparent;
+}
+input[type=submit] {
+  background-color: #c21ab9;;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #e00b8f;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f0b7ed;;
+  padding: 20px;
+}
+.container-fluid {
+    padding-right: 159px;
+    padding-left: 226px;
+}
+</style>
+</head>
+<body>
+
+
+<div class="container">
+    <form action="/UpdateInfo/" method="post" enctype="applications/json >
+        <center>
+            <b><h3>Client Information</h3></b>
+        </center>
+        <b> <label for="fname"><b>Request ID</label></b>
+        <input type="text" id="fname" name="reqid" placeholder="Request number..">
+
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+        <label for="template">Template</label>
+        <input type="text" id="template" name="template" placeholder="Your last name..">
+
+        <label for="notes">Notes</label>
+        <input type="text" id="notes" name="notes" placeholder="Your last name..">
+
+        <label for="res">Resolution</label>
+        <input type="text" id="res" name="res" placeholder="Your last name..">
+
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+</body>
+</html>
